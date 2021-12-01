@@ -1,5 +1,6 @@
 package com.example.newfirebase;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -36,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseAuth.getInstance().signOut();
                 Toast.makeText(MainActivity.this, "Logged Out", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this , StartActivity.class));
+            }
+
+            @NonNull
+            @Override
+            protected Object clone() throws CloneNotSupportedException {
+                return super.clone();
             }
         });
     }
