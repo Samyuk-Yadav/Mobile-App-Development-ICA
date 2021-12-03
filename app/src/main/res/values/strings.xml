@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Splash Screen</string>
+    <string name= "app_name">Splash Screen</string>
+    <string name= "Slides_layout">Write down everything that you want to store and use it to play games and write down the scores</string>
 </resources>
