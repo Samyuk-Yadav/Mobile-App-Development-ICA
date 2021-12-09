@@ -3,10 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/drawable/circle.xml" value="0.14322916666666666" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/drawable/gamepad_controller.xml" value="0.14322916666666666" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/drawable/tic_tak_toe.xml" value="0.14322916666666666" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_notes.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_splashscreen.xml" value="0.11302083333333333" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_start.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_tic_tak_toe.xml" value="0.2359375" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/list_item.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/splashscreen.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/drawable/notepad.xml" value="0.10364583333333334" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_introduction.xml" value="0.1" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_logout.xml" value="0.264" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_notes.xml" value="0.1" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_register.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_slides_layout.xml" value="0.1" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_start.xml" value="0.25" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/activity_tic_tak_toe.xml" value="0.1" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/NewFirebase/app/src/main/res/layout/list_item.xml" value="0.25" />
       </map>
     </option>

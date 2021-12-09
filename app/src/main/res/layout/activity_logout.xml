@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Logout">
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Games"
+        android:text="Logout"
         android:gravity="center"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="138dp" />
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="337dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
