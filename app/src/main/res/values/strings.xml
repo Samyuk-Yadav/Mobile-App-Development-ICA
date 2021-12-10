@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Splash Screen</string>
     <string name="Slides_layout">Write down everything that you want to store and use it to play games and write down the scores</string>
+    <string name="text">Light Mode</string>
 
 
     <string name="first_slide">Play simple Games</string>
@@ -21,6 +22,7 @@
     <string name="skip_btn">Skip</string>
     <string name="nxt_btn">Next</string>
     <string name="lets_get_started">Why to wait! Let\'s get started</string>
+
 
 
 </resources>

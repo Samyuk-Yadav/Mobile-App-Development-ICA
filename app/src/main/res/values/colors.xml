@@ -7,6 +7,18 @@
     <color name="yellow">#fcdb00</color>
     <color name="teal_700">#FF018786</color>
     <color name="Pink">#fc03fc</color>
+    <color name="Red">#ff0400</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#020202</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorAccent">#23b8b3</color>
+
+    <color name="mainText">#2D313D</color>
+    <color name="textAlt">#8D8F97</color>
+
+    <color name="textColor">#000000</color>
+
+    <color name="mainBackground">#ffffff</color>
 </resources>

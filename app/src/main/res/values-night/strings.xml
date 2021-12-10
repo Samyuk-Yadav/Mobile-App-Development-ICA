@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="button">Button</string>
+    <string name="app_name">Splash Screen</string>
+
+    <string name="text">Night Mode</string>
+
 </resources>
