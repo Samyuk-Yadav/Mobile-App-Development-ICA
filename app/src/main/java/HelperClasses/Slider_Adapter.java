@@ -42,7 +42,7 @@ public class Slider_Adapter extends PagerAdapter {
             R.string.sixth_slide,
     };
 
-    int description[] = {
+    int descriptions[] = {
             R.string.first_slide_desc,
             R.string.second_slide_desc,
             R.string.third_slide_desc,
@@ -56,6 +56,7 @@ public class Slider_Adapter extends PagerAdapter {
 
     @Override
     public int getCount() {
+
         return headings.length;
     }
 
@@ -72,9 +73,11 @@ public class Slider_Adapter extends PagerAdapter {
 
         ImageView imageView = view.findViewById(R.id.slider_image);
         TextView heading = view.findViewById(R.id.slider_heading);
+        TextView description = view.findViewById(R.id.slider_desc);
 
         imageView.setImageResource(images[position]);
         heading.setText(headings[position]);
+        description.setText(descriptions[position]);
 
 
         container.addView(view);

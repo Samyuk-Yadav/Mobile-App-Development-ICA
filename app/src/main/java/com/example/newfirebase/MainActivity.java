@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         games= findViewById(R.id.btngames);
 
-        switchCompat = findViewById(R.id.switchCompact);
+        switchCompat = findViewById(R.id.switchCompat);
 
 
         sharedPreferences = getSharedPreferences("Night" , 0);
