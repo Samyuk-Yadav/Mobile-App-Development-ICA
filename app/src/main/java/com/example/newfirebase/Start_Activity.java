@@ -42,7 +42,7 @@ public class Start_Activity extends AppCompatActivity {
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
-       startActivity(new Intent(Start_Activity.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
+       startActivity(new Intent(Start_Activity.this, ScrollActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
        }
     }
 }

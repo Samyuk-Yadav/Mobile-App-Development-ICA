@@ -17,4 +17,19 @@
 
         <item name="android:textColorPrimary">@color/white</item>
     </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimarytd</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarktd</item>
+        <item name="colorAccent">@color/colorAccenttd</item>
+        <item name="buttonStyle">@style/CustomButton</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
 </resources>

@@ -14,20 +14,22 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class ScrollActivity extends AppCompatActivity {
     private Button logout;
-    private Button games;
-    private SwitchCompat switchCompat;
+    private Button tictaktoe;
+    private Button truthanddare;
+    private SwitchCompat nightMode;
     SharedPreferences sharedPreferences = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_scroll);
 
-        games= findViewById(R.id.btngames);
+        tictaktoe= findViewById(R.id.btngames);
+        truthanddare = findViewById(R.id.truth_and_dare);
 
-        switchCompat = findViewById(R.id.switchCompat);
+        nightMode = findViewById(R.id.nightMode);
 
 
         sharedPreferences = getSharedPreferences("Night" , 0);
@@ -35,22 +37,22 @@ public class MainActivity extends AppCompatActivity {
 
         if(booleanValue){
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            switchCompat.setChecked(true);
+            nightMode.setChecked(true);
         }
 
-        switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        nightMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    switchCompat.setChecked(true);
+                    nightMode.setChecked(true);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putBoolean("Night_Mode", true);
                     editor.commit();
                 }
                 else{
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                    switchCompat.setChecked(false);
+                    nightMode.setChecked(false);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putBoolean("Night_Mode", false);
                     editor.commit();
@@ -70,14 +72,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        games.setOnClickListener(new View.OnClickListener() {
+        tictaktoe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Tic_Tak_Toe.class));
+                startActivity(new Intent(ScrollActivity.this, Tic_Tak_Toe.class));
+
+            }
+        });
+
+        truthanddare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), StartActivitytd.class));
 
             }
         });
 
 
     }
+
 }

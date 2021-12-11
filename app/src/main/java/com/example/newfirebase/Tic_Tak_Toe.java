@@ -64,7 +64,7 @@ public class Tic_Tak_Toe extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Tic_Tak_Toe.this, MainActivity.class));
+                startActivity(new Intent(Tic_Tak_Toe.this, ScrollActivity.class));
                 finish();
             }
         });

@@ -101,8 +101,7 @@ public class Introduction extends AppCompatActivity {
                 start.setVisibility(View.INVISIBLE);
             } else {
                 animation = AnimationUtils.loadAnimation(Introduction.this, R.anim.bottom_animations);
-                start.setAnimation(animation);
-                start.setVisibility(View.VISIBLE);
+                start.setAnimation(animation); start.setVisibility(View.VISIBLE);
             }
         }
 

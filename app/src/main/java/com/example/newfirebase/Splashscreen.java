@@ -1,6 +1,7 @@
 package com.example.newfirebase;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -18,6 +19,7 @@ public class Splashscreen extends AppCompatActivity {
 
     Animation topAnim , sideAnim, bottomAnim;
     ImageView image;
+    SharedPreferences preferenceshared;
     TextView logo, slogan;
 
     @Override
@@ -43,8 +45,22 @@ public class Splashscreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Splashscreen.this, Introduction.class));
-                finish();
+
+                preferenceshared = getSharedPreferences("Screen_introduction", MODE_PRIVATE);
+                boolean userTimeOne = preferenceshared.getBoolean("userTimeOne", true);
+
+                if(userTimeOne) {
+                    SharedPreferences.Editor editor = preferenceshared.edit();
+                    editor.putBoolean("userTimeOne",false);
+                    editor.commit();
+
+                    startActivity(new Intent(Splashscreen.this, Introduction.class));
+                    finish();
+                }
+                else {
+                    startActivity(new Intent(Splashscreen.this, Start_Activity.class));
+                    finish();
+                }
             }
         } ,SPLASH_SCREEN);
     }

@@ -1,3 +1,52 @@
+package com.example.newfirebase;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+public class NotepadActivity<adapter> extends AppCompatActivity {
+
+    private EditText edit;
+    private Button add;
+
+    private ListView listView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_notepad);
+//
+//        edit = findViewById(R.id.edit);
+//        add = findViewById(R.id.add);
+//
+//        listView = findViewById(R.id.listView);
+//
+//        add.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String txt_name = edit.getText().toString();
+//                if (txt_name.isEmpty()){
+//                    Toast.makeText(NotepadActivity.this, "No Text Entered", Toast.LENGTH_SHORT).show();
+//                }else {
+//                    FirebaseDatabase.getInstance().getReference().child("User_Notes").push().setValue(txt_name);
+//                }
+//        });
+//
+//        final ArrayList<String> list = new ArrayList<>();
+//        final ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.list_item, list);
+//        listView.setAdapter(adapter);
+//
+//        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("User_Notes")
+    }
+}
+
+//
 //package com.example.newfirebase;
 //
 //import androidx.annotation.NonNull;
@@ -202,4 +251,4 @@
 //            });
 //        }
 //    }
-//}
+}

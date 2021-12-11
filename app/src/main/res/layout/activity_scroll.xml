@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@color/mainBackground"
         android:orientation="horizontal"
-        tools:context=".MainActivity">
+        tools:context=".ScrollActivity">
 
         <Button
             android:id="@+id/maps"
@@ -40,39 +40,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton" />
-
-<!--        <Button-->
-<!--            android:id="@+id/logout"-->
-<!--            android:layout_width="236dp"-->
-<!--            android:layout_height="53dp"-->
-<!--            android:layout_below="@id/btngames"-->
-<!--            android:background="@drawable/bg_switch"-->
-<!--            android:gravity="center"-->
-<!--            android:paddingStart="32dp"-->
-<!--            android:paddingEnd="32dp"-->
-<!--            android:text="Logout"-->
-<!--            android:textColor="@color/mainBackground"-->
-<!--            android:textSize="20sp"-->
-<!--            app:layout_constraintBaseline_toBottomOf="@id/switchCompact"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.722"-->
-<!--            app:layout_constraintStart_toStartOf="@+id/textView3"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/truth_and_dare" />-->
-
-<!--        <androidx.appcompat.widget.SwitchCompat-->
-<!--            android:id="@+id/switchCompact"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="110dp"-->
-<!--            android:checked="false"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="@string/text"-->
-<!--            android:textSize="20sp"-->
-<!--            app:layout_constraintEnd_toEndOf="@+id/maps"-->
-<!--            app:layout_constraintHorizontal_bias="0.949"-->
-<!--            app:layout_constraintStart_toStartOf="@+id/notes"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/logout"-->
-<!--            app:switchPadding="10dp" />-->
 
         <Button
             android:id="@+id/truth_and_dare"
@@ -104,10 +71,13 @@
             android:layout_width="385dp"
             android:layout_height="81dp"
             android:layout_marginTop="10dp"
-            android:background="@color/Pink"
+            android:background="@drawable/bg_switch"
+            android:backgroundTint="#AB31C3"
             android:gravity="center"
             android:text="@string/lets_get_started"
+            android:textColor="#FFFFFF"
             android:textColorHighlight="@color/purple_500"
+            android:textCursorDrawable="@drawable/bg_switch"
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/btngames"
@@ -129,7 +99,7 @@
             app:layout_constraintTop_toBottomOf="@+id/maps" />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/switchCompat"
+            android:id="@+id/nightMode"
             android:layout_width="158dp"
             android:layout_height="48dp"
             android:layout_marginTop="110dp"
@@ -149,15 +119,15 @@
             android:text="Logout"
             android:textSize="32sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/switchCompat"
-            app:layout_constraintStart_toStartOf="@+id/switchCompat"
-            app:layout_constraintTop_toBottomOf="@+id/switchCompat" />
+            app:layout_constraintEnd_toEndOf="@+id/nightMode"
+            app:layout_constraintStart_toStartOf="@+id/nightMode"
+            app:layout_constraintTop_toBottomOf="@+id/nightMode" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="260dp"
             android:layout_height="225dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="80dp"
             app:layout_constraintEnd_toEndOf="@+id/headingText"
             app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="@+id/headingText"

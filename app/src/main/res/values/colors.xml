@@ -15,6 +15,11 @@
     <color name="colorPrimaryDark">#101010</color>
     <color name="colorAccent">#23b8b3</color>
 
+
+    <color name="colorPrimarytd">#3498DB</color>
+    <color name="colorPrimaryDarktd">#2475B0</color>
+    <color name="colorAccenttd">#4BCFFA</color>
+
     <color name="mainText">#2D313D</color>
     <color name="textAlt">#8D8F97</color>
 

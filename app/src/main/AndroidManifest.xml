@@ -11,11 +11,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.light">
         <activity
+            android:name=".NotepadActivity"
+            android:exported="false" />
+        <activity
             android:name=".Introduction"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivitytd"
             android:exported="false" />
+        <activity
+            android:name=".ScrollActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TruthActivitytd"
+            android:label="@string/truthtd" />
+        <activity
+            android:name=".DareActivitytd"
+            android:label="@string/daretd" />
         <activity
             android:name=".Tic_Tak_Toe"
             android:exported="false" />
@@ -27,6 +39,9 @@
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivitytd"
             android:exported="false" />
         <activity
             android:name=".Splashscreen"
